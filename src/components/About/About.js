@@ -56,9 +56,9 @@ function About() {
           <Toolstack />
         </Suspense>
 
-        <Suspense fallback={<div>Loading...</div>}>
+        {/* <Suspense fallback={<div>Loading...</div>}>
           <Github />
-        </Suspense>
+        </Suspense> */}
       </Container>
     </Container>
   );

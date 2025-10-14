@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile_image.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiFillMail, AiFillGoogleCircle } from "react-icons/ai";
+import { FaLinkedinIn, FaGoogle } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -15,40 +15,49 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and web development
+              I fell in love with design and creating intuitive digital
+              experiences.
               <br />
               <br />I am fluent in
               <i>
                 <b className="purple">
                   {" "}
-                  React, Javascript, Python and Typescript.{" "}
-                </b>
+                  Figma, modern design principles including user-centered
+                  design, accessibility,
+                </b>{" "}
+                and <b className="purple">responsive layouts. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of interest lies in crafting &nbsp;
               <i>
-                <b className="purple">Web Apps and Products </b>
+                <b className="purple">engaging user interfaces </b>
+              </i>{" "}
+              and{" "}
+              <i>
+                <b className="purple">improving user journeys</b> through{" "}
+                <b className="purple">thoughtful design. </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js, Flask</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              Whenever possible, I also apply my passion for{" "}
+              <b className="purple">designing</b> and{" "}
+              <b className="purple">prototyping</b> interactive experiences,
+              conducting <b className="purple">user research,</b> and{" "}
+              <b className="purple">collaborating</b>
+              <i> closely with developers to bring designs to life.</i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{
+                  borderRadius: "50%",
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -61,18 +70,18 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/rahuljassal"
+                  href="mailto:chiragmattu23@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <FaGoogle />
                 </a>
               </li>
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/rahul-jassal-44ba75179"
+                  href="https://www.linkedin.com/in/chirag-mattu-4a40981b9/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

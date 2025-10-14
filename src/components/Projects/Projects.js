@@ -2,12 +2,7 @@ import React, { Suspense } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
-import spotify from "../../Assets/Projects/Spotify.png";
-import youtube from "../../Assets/Projects/youtube.png";
-import node from "../../Assets/Projects/Node.png";
-import email from "../../Assets/Projects/email.png";
-import direct from "../../Assets/Projects/direct-supply.png";
-import chess from "../../Assets/Projects/chess.png";
+import burgerLicious from "../../Assets/Projects/burgerLicious.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
 function Projects() {
   return (
@@ -24,75 +19,11 @@ function Projects() {
           <Col md={4} className="project-card">
             <Suspense fallback={<div>Loading...</div>}>
               <ProjectCard
-                imgPath={spotify}
+                imgPath={burgerLicious}
                 isBlog={false}
-                title="Spotify Clone"
-                description="Built a Spotify clone using React.js, Redux for state management, and the Spotify Web API for music data. Features include user authentication, playlist management, and real-time music playback."
-                ghLink="https://github.com/rahuljassal/spotify-clone"
-                demoLink="https://spotify-clone-rahul.vercel.app/"
-              />
-            </Suspense>
-          </Col>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={chess}
-                isBlog={false}
-                title="Chess Game"
-                description="A fully-featured chess game built with React 18, Vite ,TypeScript, Tailwind CSS, Radix UI Components & shadcn/ui, featuring a complete implementation of chess rules, piece movement validation, and game state management."
-                ghLink="https://github.com/rahuljassal/Chess-Game"
-                demoLink="https://chess-game-olive-eight.vercel.app/"
-              />
-            </Suspense>
-          </Col>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={youtube}
-                isBlog={false}
-                title="Youtube Clone"
-                description="Created a YouTube clone using React.js and the YouTube Data API. Implemented features like video search, playback, and comments. Used Material-UI for styling and Redux for state management."
-                ghLink="https://github.com/rahuljassal/youtube-clone"
-                demoLink="https://youtube-clone-rahul.vercel.app/"
-              />
-            </Suspense>
-          </Col>
-
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={node}
-                isBlog={false}
-                title="Node.js API"
-                description="Developed a RESTful API using Node.js, Express, and MongoDB. Implemented user authentication, CRUD operations, and file uploads. Used JWT for secure authentication."
-                ghLink="https://github.com/rahuljassal/node-api"
-                demoLink="https://node-api-rahul.vercel.app/"
-              />
-            </Suspense>
-          </Col>
-
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={email}
-                isBlog={false}
-                title="Email Client"
-                description="Built an email client using React.js and Firebase. Features include sending/receiving emails, attachments, and real-time notifications."
-                ghLink="https://github.com/rahuljassal/email-client"
-                demoLink="https://email-client-rahul.vercel.app/"
-              />
-            </Suspense>
-          </Col>
-
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={direct}
-                isBlog={false}
-                title="Direct Supply"
-                description="Developed a supply chain management system using React.js and Node.js. Implemented features like inventory tracking, order management, and analytics."
-                ghLink="https://github.com/rahuljassal/direct-supply"
-                demoLink="https://direct-supply-rahul.vercel.app/"
+                title="BurgerLicious"
+                description="A high-fidelity design prototype for a modern food ordering app. Features intuitive menu browsing, customizable orders, real-time order tracking, seamless checkout, and user-friendly navigation. Designed in Figma with a focus on clean UI, accessibility, and engaging user experience."
+                demoLink="https://www.figma.com/proto/qMVUJfEuWp4w7GVzr1Gd4s/BurgerLicious?node-id=5-11&t=bkIXqHNFwMP7zUCi-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A507&starting-point-node-id=5%3A11"
               />
             </Suspense>
           </Col>

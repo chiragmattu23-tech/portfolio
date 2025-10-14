@@ -7,7 +7,13 @@ import {
   SiVercel,
   SiMacos,
   SiPycharm,
+  SiFigma,
+  SiJira,
+  SiNotion,
 } from "react-icons/si";
+import { FaRegStickyNote } from "react-icons/fa"; // Placeholder for Miro
+import { MdOutlineQuiz } from "react-icons/md"; // Placeholder for Maze
+import { BiTargetLock } from "react-icons/bi"; // Placeholder for Optimal Workshop
 import TextTitle from "./TextTitle";
 
 function Toolstack() {
@@ -18,21 +24,20 @@ function Toolstack() {
         <TextTitle text="MacOS" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-        <TextTitle text="VS Code" />
+        <SiFigma />
+        <TextTitle text="Figma" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPycharm />
-        <TextTitle text="Pycharm" />
+        <SiJira />
+        <TextTitle text="Jira" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-        <TextTitle text="Postman" />
+        <FaRegStickyNote />
+        <TextTitle text="Miro" />
       </Col>
-
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-        <TextTitle text="Vercel" />
+        <SiNotion />
+        <TextTitle text="Notion" />
       </Col>
     </Row>
   );
