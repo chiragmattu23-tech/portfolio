@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { FaLinkedinIn, FaGoogle } from "react-icons/fa";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -19,7 +19,7 @@ function Footer() {
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
               >
-                <FaGoogle />
+                <FaEnvelope />
               </a>
             </li>
 

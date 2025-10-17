@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile_image.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillMail, AiFillGoogleCircle } from "react-icons/ai";
-import { FaLinkedinIn, FaGoogle } from "react-icons/fa";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -75,7 +75,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaGoogle />
+                  <FaEnvelope />
                 </a>
               </li>
 

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
 import burgerLicious from "../../Assets/Projects/burgerLicious.png";
+import carouselAnimation from "../../Assets/Projects/carouselAnimation.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
 function Projects() {
   return (
@@ -27,6 +28,18 @@ function Projects() {
               />
             </Suspense>
           </Col>
+          <Col md={4} className="project-card">
+            <Suspense fallback={<div>Loading...</div>}>
+              <ProjectCard
+                imgPath={carouselAnimation}
+                isBlog={false}
+                title="Carousel Animation"
+                description="A 3D Carousel Animation prototype created in Figma that explores motion, depth, and smooth transitions. This experiment focuses on UI motion design, 3D animation, and interaction design, using Smart Animate, layered prototyping, and microinteractions to make interfaces feel more dynamic and engaging."
+                demoLink="https://www.figma.com/proto/i4UkUbEA4Q4NCnbRgsoQbz/Valorant-3D-carousel-animation?node-id=48-2&t=RkCy3WJEUPiIIBTk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A2"
+              />
+            </Suspense>
+          </Col>
+          
         </Row>
       </Container>
     </Container>
