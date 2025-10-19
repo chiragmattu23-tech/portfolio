@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
-import burgerLicious from "../../Assets/Projects/burgerLicious.png";
+import tastyBites from "../../Assets/Projects/tastyBites.png";
 import carouselAnimation from "../../Assets/Projects/carouselAnimation.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
 function Projects() {
@@ -20,10 +20,10 @@ function Projects() {
           <Col md={4} className="project-card">
             <Suspense fallback={<div>Loading...</div>}>
               <ProjectCard
-                imgPath={burgerLicious}
+                imgPath={tastyBites}
                 isBlog={false}
-                title="BurgerLicious"
-                description="A high-fidelity design prototype for a modern food ordering app. Features intuitive menu browsing, customizable orders, real-time order tracking, seamless checkout, and user-friendly navigation. Designed in Figma with a focus on clean UI, accessibility, and engaging user experience."
+                title="TastyBites"
+                description="A high-fidelity design prototype for a modern food ordering app. Features intuitive menu browsing, search functionality, customizable orders, real-time order tracking, seamless checkout, and user-friendly navigation. Designed in Figma with a focus on clean UI, accessibility, and engaging user experience."
                 demoLink="https://www.figma.com/proto/qMVUJfEuWp4w7GVzr1Gd4s/BurgerLicious?node-id=5-11&t=bkIXqHNFwMP7zUCi-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A507&starting-point-node-id=5%3A11"
               />
             </Suspense>
