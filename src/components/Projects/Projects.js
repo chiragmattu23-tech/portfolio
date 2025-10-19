@@ -22,9 +22,9 @@ function Projects() {
               <ProjectCard
                 imgPath={tastyBites}
                 isBlog={false}
-                title="TastyBites"
+                title="Tasty Bites"
                 description="A high-fidelity design prototype for a modern food ordering app. Features intuitive menu browsing, search functionality, customizable orders, real-time order tracking, seamless checkout, and user-friendly navigation. Designed in Figma with a focus on clean UI, accessibility, and engaging user experience."
-                demoLink="https://www.figma.com/proto/qMVUJfEuWp4w7GVzr1Gd4s/BurgerLicious?node-id=5-11&t=bkIXqHNFwMP7zUCi-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A507&starting-point-node-id=5%3A11"
+                demoLink="https://www.figma.com/proto/qMVUJfEuWp4w7GVzr1Gd4s/TastyBites?node-id=5-11&p=f&t=dLJIkjUBBbuSiDt1-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A507&starting-point-node-id=5%3A11"
               />
             </Suspense>
           </Col>
