@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import tastyBites from "../../Assets/Projects/tastyBites.png";
 import carouselAnimation from "../../Assets/Projects/carouselAnimation.png";
+import jordanShoes from "../../Assets/Projects/jordanShoes.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
 function Projects() {
   return (
@@ -17,6 +18,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <Suspense fallback={<div>Loading...</div>}>
+              <ProjectCard
+                imgPath={jordanShoes}
+                isBlog={false}
+                title="Sneaker Spotlight"
+                description="A Figma prototype of a Jordan landing-page carousel featuring three distinct colorway screens and coordinated 3D motion. Uses Smart Animate, layered prototyping, and microinteractions to showcase product variations with smooth depth transitions and polished timing—designed for immersive product discovery."
+                demoLink="https://www.figma.com/proto/i4UkUbEA4Q4NCnbRgsoQbz/Valorant-3D-carousel-animation?node-id=48-2&t=RkCy3WJEUPiIIBTk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A2"
+              />
+            </Suspense>
+          </Col>
           <Col md={4} className="project-card">
             <Suspense fallback={<div>Loading...</div>}>
               <ProjectCard
