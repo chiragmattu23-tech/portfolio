@@ -25,7 +25,7 @@ function Projects() {
                 isBlog={false}
                 title="Sneaker Spotlight"
                 description="A Figma prototype of a Jordan landing-page carousel featuring three distinct colorway screens and coordinated 3D motion. Uses Smart Animate, layered prototyping, and microinteractions to showcase product variations with smooth depth transitions and polished timing—designed for immersive product discovery."
-                demoLink="https://www.figma.com/proto/i4UkUbEA4Q4NCnbRgsoQbz/Valorant-3D-carousel-animation?node-id=48-2&t=RkCy3WJEUPiIIBTk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A2"
+                demoLink="https://www.figma.com/proto/ZHTanLL4YLkPLQEn6FZyOH/NewJordanShoes?node-id=1-161&p=f&t=LsOKbltZMYwyksVW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
               />
             </Suspense>
           </Col>
