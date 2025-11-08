@@ -26,7 +26,7 @@ function Projects() {
                 imgPath={mentorPlus}
                 isBlog={false}
                 title="MentorPlus"
-                description="A Figma prototype for MentorPlus, a platform that helps final‑year students improve English communication and prepare for job interviews. The prototype demonstrates end‑to‑end user flows — designed with clear information hierarchy, microinteractions, and responsive layouts to make practice engaging."
+                description="A Figma prototype for MentorPlus app, a platform that helps final‑year students improve English communication and prepare for job interviews. The prototype demonstrates end‑to‑end user flows — designed with clear information hierarchy, microinteractions, and responsive layouts to make practice engaging."
                 demoLink="https://www.figma.com/proto/jK2n6zWOOPvJ6f9ws4r2Ap/MentorPlus?node-id=11-3&p=f&t=nu7CHMHfcaTKjHNy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A3"
               />
             </Suspense>
