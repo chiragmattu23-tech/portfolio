@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import laptopImg from "../../Assets/about.png";
-const Github = React.lazy(() => import("./Github"));
 const Techstack = React.lazy(() => import("./Techstack"));
 const Aboutcard = React.lazy(() => import("./AboutCard"));
 const Toolstack = React.lazy(() => import("./Toolstack"));
@@ -55,10 +54,6 @@ function About() {
         <Suspense fallback={<div>Loading...</div>}>
           <Toolstack />
         </Suspense>
-
-        {/* <Suspense fallback={<div>Loading...</div>}>
-          <Github />
-        </Suspense> */}
       </Container>
     </Container>
   );

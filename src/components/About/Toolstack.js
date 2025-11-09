@@ -1,19 +1,11 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
   SiMacos,
-  SiPycharm,
   SiFigma,
   SiJira,
   SiNotion,
 } from "react-icons/si";
 import { FaRegStickyNote } from "react-icons/fa"; // Placeholder for Miro
-import { MdOutlineQuiz } from "react-icons/md"; // Placeholder for Maze
-import { BiTargetLock } from "react-icons/bi"; // Placeholder for Optimal Workshop
 import TextTitle from "./TextTitle";
 
 function Toolstack() {

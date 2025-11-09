@@ -1,29 +1,5 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-  DiUikit,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-  SiFlask,
-  SiGooglecloud,
-  SiFastapi,
-  SiExpress,
-  SiFigma,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { SiFigma } from "react-icons/si";
 import {
   FaRegLightbulb,
   FaUsers,
