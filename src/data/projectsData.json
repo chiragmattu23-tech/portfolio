@@ -124,6 +124,15 @@
       "imgPath": "edullem",
       "demoLink": "https://www.figma.com/proto/jxb4XyQiQJzvYAsiipK3Zt/Eduleem?node-id=5-46&scaling=scale-down&content-scaling=fixed&t=fMxstu4e5lDxGN42-1",
       "isBlog": false
+    },
+    {
+      "id": 13,
+      "tabId": "3",
+      "title": "Hiring Template",
+      "description": "A professional hiring template design showcasing recruitment workflows, candidate management interfaces, and application tracking system components. Features clean layouts, intuitive forms, and dashboard visualizations designed to streamline the hiring process with organized information architecture and user-friendly interactions.",
+      "imgPath": "HiringTemplate",
+      "demoLink": "https://www.figma.com/proto/npGHxlg6g96hbVUMEhrWYa/Hiring-Template?node-id=0-29&p=f&t=HOWMdL7vhq2cjNmr-1&scaling=contain&content-scaling=fixed&page-id=0%3A1",
+      "isBlog": false
     }
   ]
 }

@@ -25,6 +25,7 @@ import iphoneDesign from "../../Assets/Projects/iphoneDesign.png";
 import airpodsDesign from "../../Assets/Projects/airpodsDesign.png";
 import airConditioning from "../../Assets/Projects/airConditioning.png";
 import edullem from "../../Assets/Projects/edullem.png";
+import HiringTemplate from "../../Assets/Projects/HiringTemplate.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
 
 // Map image names to their imports
@@ -40,7 +41,8 @@ const imageMap = {
   iphoneDesign,
   airpodsDesign,
   airConditioning,
-  edullem
+  edullem,
+  HiringTemplate
 };
 
 function Projects() {
