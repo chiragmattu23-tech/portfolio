@@ -1,14 +1,51 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 
 import Particle from "../Particle";
+import projectsData from "../../data/projectsData.json";
+
+// Import all project images
 import tastyBites from "../../Assets/Projects/tastyBites.png";
 import carouselAnimation from "../../Assets/Projects/carouselAnimation.png";
 import jordanShoes from "../../Assets/Projects/jordanShoes.png";
 import mentorPlus from "../../Assets/Projects/mentorPlus.png";
 import apolloHospital from "../../Assets/Projects/apolloHospital.png";
+import hawkstack from "../../Assets/Projects/hawkstack.png";
+import jrjewels from "../../Assets/Projects/jrjewels.png";
+import testimonialDesign from "../../Assets/Projects/testimonialDesign.png";
+import iphoneDesign from "../../Assets/Projects/iphoneDesign.png";
+import airpodsDesign from "../../Assets/Projects/airpodsDesign.png";
+import airConditioning from "../../Assets/Projects/airConditioning.png";
+import edullem from "../../Assets/Projects/edullem.png";
 const ProjectCard = React.lazy(() => import("./ProjectCards"));
+
+// Map image names to their imports
+const imageMap = {
+  tastyBites,
+  carouselAnimation,
+  jordanShoes,
+  mentorPlus,
+  apolloHospital,
+  hawkstack,
+  jrjewels,
+  testimonialDesign,
+  iphoneDesign,
+  airpodsDesign,
+  airConditioning,
+  edullem
+};
+
 function Projects() {
+  const [tabValue, setTabValue] = useState("1");
+
+  const handleTabChange = (event, newValue) => {
+    setTabValue(newValue);
+  };
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -19,66 +56,61 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={mentorPlus}
-                isBlog={false}
-                title="MentorPlus"
-                description="A Figma prototype for MentorPlus app, a platform that helps final‑year students improve English communication and prepare for job interviews. The prototype demonstrates end‑to‑end user flows — designed with clear information hierarchy, microinteractions, and responsive layouts to make practice engaging."
-                demoLink="https://www.figma.com/proto/jK2n6zWOOPvJ6f9ws4r2Ap/MentorPlus?node-id=11-3&p=f&t=nu7CHMHfcaTKjHNy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A3"
-              />
-            </Suspense>
-          </Col>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={tastyBites}
-                isBlog={false}
-                title="Tasty Bites"
-                description="A high-fidelity design prototype for a modern food ordering app. Features intuitive menu browsing, search functionality, customizable orders, real-time order tracking, seamless checkout, and user-friendly navigation. Designed in Figma with a focus on clean UI, accessibility, and engaging user experience."
-                demoLink="https://www.figma.com/proto/qMVUJfEuWp4w7GVzr1Gd4s/TastyBites?node-id=5-11&p=f&t=dLJIkjUBBbuSiDt1-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A507&starting-point-node-id=5%3A11"
-              />
-            </Suspense>
-          </Col>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={apolloHospital}
-                isBlog={false}
-                title="Apollo Hospital"
-                description="A Figma prototype for Apollo Hospital that enables users to discover available doctors, filter by specialty, experience, and availability, view detailed doctor profiles (ratings, consultation modes, and bios), select an appointment slot, and complete booking with calendar integration and confirmation."
-                demoLink="https://www.figma.com/proto/PPUKOumFuep3wWm5m559Jp/Apolo-Hospital?node-id=10-181&p=f&t=05otY5rkmaggkPFW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A181"
-              />
-            </Suspense>
-          </Col>
-          
-        </Row>
-                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={jordanShoes}
-                isBlog={false}
-                title="Sneaker Spotlight"
-                description="A Figma prototype of a Jordan landing-page carousel featuring three distinct colorway screens and coordinated 3D motion. Uses Smart Animate, layered prototyping, and microinteractions to showcase product variations with smooth depth transitions and polished timing—designed for immersive product discovery."
-                demoLink="https://www.figma.com/proto/ZHTanLL4YLkPLQEn6FZyOH/NewJordanShoes?node-id=1-161&p=f&t=LsOKbltZMYwyksVW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-              />
-            </Suspense>
-          </Col>
-          <Col md={4} className="project-card">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ProjectCard
-                imgPath={carouselAnimation}
-                isBlog={false}
-                title="Carousel Animation"
-                description="A 3D Carousel Animation prototype created in Figma that explores motion, depth, and smooth transitions. This experiment focuses on UI motion design, 3D animation, and interaction design, using Smart Animate, layered prototyping, and microinteractions to make interfaces feel more dynamic and engaging."
-                demoLink="https://www.figma.com/proto/i4UkUbEA4Q4NCnbRgsoQbz/Valorant-3D-carousel-animation?node-id=48-2&t=RkCy3WJEUPiIIBTk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A2"
-              />
-            </Suspense>
-          </Col>
-        </Row>
+
+        <Box
+          sx={{
+            width: "100%",
+            mt: 3,
+            "& .MuiTabs-root": {
+              borderBottom: "2px solid rgba(200, 100, 255, 0.3)",
+            },
+            "& .MuiTab-root": {
+              color: "white",
+              fontWeight: 600,
+              fontSize: "1rem",
+              textTransform: "capitalize",
+              "&.Mui-selected": {
+                color: "#c770f0",
+              },
+            },
+            "& .MuiTabs-indicator": {
+              backgroundColor: "#c770f0",
+            },
+          }}
+        >
+          <TabContext value={tabValue}>
+            <TabList onChange={handleTabChange} aria-label="Project categories">
+              {projectsData.tabs.map((tab) => (
+                <Tab key={tab.id} label={tab.label} value={tab.id} />
+              ))}
+            </TabList>
+
+            {projectsData.tabs.map((tab) => {
+              const tabProjects = projectsData.projects.filter(
+                (project) => project.tabId === tab.id
+              );
+              return (
+                <TabPanel key={tab.id} value={tab.id} sx={{ p: 3 }}>
+                  <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                    {tabProjects.map((project) => (
+                      <Col key={project.id} md={4} className="project-card">
+                        <Suspense fallback={<div>Loading...</div>}>
+                          <ProjectCard
+                            imgPath={imageMap[project.imgPath]}
+                            isBlog={project.isBlog}
+                            title={project.title}
+                            description={project.description}
+                            demoLink={project.demoLink}
+                          />
+                        </Suspense>
+                      </Col>
+                    ))}
+                  </Row>
+                </TabPanel>
+              );
+            })}
+          </TabContext>
+        </Box>
       </Container>
     </Container>
   );

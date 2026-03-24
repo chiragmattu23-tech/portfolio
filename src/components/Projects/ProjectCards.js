@@ -12,6 +12,14 @@ function ProjectCards(props) {
         src={props.imgPath}
         alt="card-img"
         loading="lazy"
+        style={{
+          height: "250px",
+          width: "100%",
+          objectFit: "contain",
+          objectPosition: "center",
+          padding: "10px",
+          backgroundColor: "#f8f9fa",
+        }}
       />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
